@@ -1,0 +1,131 @@
+.intro {
+    background: url("../assets/time-capsule.png"), linear-gradient(145deg, #5433ff, #20bdff, #a5fecb);
+    background-repeat: no-repeat;
+    background-position: top left, left, right;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__content {
+    text-align: center;
+    max-width: 75%;
+    h1 {
+        font-size: 120px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 34px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+    .btns {
+        min-width: 250px;
+        display: block;
+        margin: 2rem auto;
+    }
+    input[type="text"],
+    input[type="password"] {
+        font-size: 2.2rem;
+        padding: 0.7rem 2rem;
+        border: 1px solid $blue-dark;
+        color: $gray-dark;
+        &::-webkit-input-placeholder {
+            color: #ccc;
+        }
+    }
+}
+
+.people {
+    width: 100%;
+    height: auto;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        color: #6e6e6e;
+        padding: 0 0 80px;
+        position: relative;
+        padding-bottom: 8px;
+        width: 60%;
+        margin: 0 auto;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(145deg, #5433ff, #20bdff, #a5fecb);
+        }
+    }
+    img {
+        display: block;
+        height: auto;
+        text-align: center;
+        margin: 80px auto 0;
+        max-width: 800px;
+    }
+}
+
+.seel {
+    border: 5px solid #20bdff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 80px auto;
+    max-width: 80%;
+    h2 {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        color: #6e6e6e;
+        padding: 0 0 80px;
+        position: relative;
+        padding-bottom: 8px;
+        width: 30%;
+        margin: 0 auto;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 6px;
+            width: 100%;
+            background: linear-gradient(145deg, #5433ff, #20bdff, #a5fecb);
+        }
+    }
+    .seel-wrap {
+        max-width: 80%;
+        padding: 0 24px;
+    }
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    p {
+        font-size: 24px;
+        color: #6e6e6e;
+    }
+    img {
+        max-height: 150px;
+        width: auto;
+        text-align: center;
+        margin: 0 100px;
+    }
+}

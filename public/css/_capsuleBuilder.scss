@@ -1,0 +1,206 @@
+.capsuleBuilder {
+    .gradBg {
+        background: $gradient;
+        padding: 5rem;
+    }
+    label {
+        display: block;
+        font-size: 2.2rem;
+        color: $blue-dark;
+        padding: 0 0 1rem;
+        font-weight: 700;
+    }
+    input[type="text"] {
+        font-size: 2.2rem;
+        padding: 0.7rem 2rem;
+        border: 1px solid $blue-dark;
+        color: $gray-dark;
+        &::-webkit-input-placeholder {
+            color: #ccc;
+        }
+    }
+    input[type="file"] {
+        font-size: 1.8rem;
+        padding: 0;
+        border: 1px solid $blue-dark;
+        color: $gray-dark;
+        width: 60%;
+    }
+    button,
+    input[type="submit"] {
+        background: $blue-dark;
+        color: #fff;
+        font-size: 2.2rem;
+        padding: 0.7rem 2rem;
+        border: 1px solid $blue-dark;
+    }
+    h2 {
+        font-size: 4.8rem;
+        color: $gray-dark;
+    }
+    h2+p {
+        font-size: 3.2rem;
+    }
+}
+
+.builderIntro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .builderIntro-copy {
+        width: 35%;
+        margin-right: 2.5%;
+        h2 {
+            font-size: 7.2rem;
+            color: #fff;
+        }
+        p {
+            color: #fff;
+            font-size: 3.2rem;
+        }
+    }
+    .builderIntro-form {
+        background: #fff;
+        padding: 25px;
+        width: 45%;
+        margin-left: 2.5%;
+        form {
+            margin: 2.5rem 0;
+        }
+    }
+}
+
+#favoriteMovies {
+    margin: 10rem auto 0;
+    max-width: 90%;
+    h2 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    img {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+    }
+    form {
+        width: 550px;
+        margin: 5rem auto;
+        button {
+            margin-left: -6px;
+        }
+        input {
+            min-width: 410px;
+        }
+    }
+}
+
+#letter {
+    width: 90%;
+    margin: 5rem auto;
+    overflow: auto;
+    textarea {
+        width: 100%;
+        margin: 2.5rem 0;
+        font-size: 2.2rem;
+    }
+    button {
+        float: right;
+    }
+}
+
+#datePicker {
+    clear: both;
+    background: $gray-light;
+    padding: 5rem 0;
+    margin: 5rem 0;
+    .datePicker-wrap {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dateCopy {
+        width: 40%;
+        order: 2;
+    }
+    .date {
+        width: 50%;
+        margin-right: 5%;
+    }
+    //BOOTSTRAP STYLE OVERWRITES
+    .bootstrap-datetimepicker-widget {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+        font-size: 1.8rem;
+        padding: 2.5rem;
+    }
+    .bootstrap-datetimepicker-widget table th {
+        padding: 10px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .bootstrap-datetimepicker-widget table td.day {
+        height: 30px;
+        line-height: 20px;
+        width: 20px;
+        padding: 10px;
+    }
+    .bootstrap-datetimepicker-widget table td.active,
+    .bootstrap-datetimepicker-widget table td.active:hover {
+        background: $gradient;
+        color: #fff;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    }
+    .bootstrap-datetimepicker-widget .timepicker-hour,
+    .bootstrap-datetimepicker-widget .timepicker-minute,
+    .bootstrap-datetimepicker-widget .timepicker-second {
+        width: 80px;
+        height: 100px;
+        font-weight: bold;
+        font-size: 4.8rem;
+        margin: 0;
+        background: $gradient;
+        padding: 24px 0 0;
+        color: #fff;
+    }
+    .separator {
+        font-size: 10rem;
+    }
+    .bootstrap-datetimepicker-widget button[data-action] {
+        padding: 6px;
+        position: relative;
+        top: 15px;
+        background: $gradient;
+        border: none;
+    }
+    .timepicker {
+        padding-top: 4.5rem;
+    }
+    .bootstrap-datetimepicker-widget table td span.active {
+        background: $blue-dark;
+    }
+}
+
+#createKey {
+    width: 90%;
+    margin: 5rem auto;
+    p {
+        margin-bottom: 2rem;
+    }
+}
+
+#saveOrSeel {
+    width: 90%;
+    margin: 5rem auto 10rem;
+    span {
+        display: block;
+    }
+    a {
+        font-size: 4.8rem;
+        text-decoration: underline;
+        font-weight: 700;
+        margin: 2rem 0;
+    }
+}

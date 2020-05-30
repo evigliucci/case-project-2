@@ -1,0 +1,84 @@
+<nav class="header-nav">
+    <ul>
+        <li><a href="/" class="nav-item logo">Time Capsule</a></li>
+        <li><a href="#" class="nav-item">My Account</a></li>
+        <li><a href="capsule" class="nav-item">My Capsules</a></li>
+        <li><a href="#" class="nav-item">Logout</a></li>
+    </ul>
+</nav>
+
+<main class="capsuleBuilder">
+    <div class="gradBg">
+        <div class="builderIntro">
+            <section class="builderIntro-copy">
+                <h2>Let's get started!</h2>
+                <p>Add items to your time capsule that you want to keep a record of, chare with loved ones, or have a
+                    good laugh later.</p>
+            </section>
+            <section class="builderIntro-form">
+                <form action="">
+                    <label for="capName">Enter a name for your Time Capsule</label>
+                    <input id="capName" type="text">
+                </form>
+
+                <form action="/api/files/v2" enctype="multipart/form-data" method="POST">
+                    <label>Add some files to your Capsule</label>
+                    <input id="upload" type="file" name="myFile" />
+                    <input type="submit" value="Upload a file" />
+                </form>
+            </section>
+        </div>
+
+
+        <section id="favoriteMovies">
+            <h2>Capture this moment in time, Include your favorite movie posters!</h2>
+            <img src="/assets/movies.png" width="100%" alt="">
+            <form action="/api/capsules/movies" method="post">
+                <input id="movieTitle" name="movieInput" type="text" placeholder="Movie Name">
+                <button id="findMovie" type="submit">Search</button>
+            </form>
+            <div class="showMovie" id="getResult"></div>
+            {{!-- <ul>
+                {{#each poster }}
+                <li>{{}}</li>
+                {{/each}}
+            </ul> --}}
+        </section>
+    </div>
+    <section id="letter">
+        <h2>Include a letter with your time capsule.</h2>
+        <p>Add items to your time capsule that you want to keep a record of, share with loved ones or have a good laugh
+            at later.</p>
+        <form action="">
+            <textarea name="letter" id="letter" cols="30" rows="5"></textarea>
+        </form>
+    </section>
+    <section id="datePicker">
+        <div class="datePicker-wrap">
+            <div class="dateCopy">
+                <h2>Set your <span class="nowrap">opening date.</span></h2>
+                <p>Add items to your time capsule that you want to keep a record of, share with loved ones or have a
+                    good laugh at later.</p>
+            </div>
+            <div class="date" style="overflow:hidden;">
+                <div id="datetimepicker12"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="createKey">
+        <h2>Create a unique Capsule Key</h2>
+        <p>This key is like a password and will be used to unlock your time capsule. Only those with the key will be
+            able to see your capsule.</p>
+
+        <form action="">
+            <label for="capsuleKey">Enter a Capsule Key</label>
+            <input type="text" placeholder="password" id="capsuleKey">
+        </form>
+    </section>
+
+    <section id="saveOrSeel">
+        <span><a id="saveAll" href="#">Save All</a></span>
+        <span><a id="seelCapsule" href="#">Seel it up for good</a></span>
+    </section>
+</main>
